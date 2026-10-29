@@ -1,0 +1,33 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# NuGet packages
+packages/
+
+# Logs
+*.log
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+
+# Publish output
+publish/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Operating system files
+Thumbs.db
+.DS_Store
