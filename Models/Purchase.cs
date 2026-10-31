@@ -1,0 +1,34 @@
+﻿namespace InventoryMvc.Models;
+
+public class Purchase
+{
+    public int Id { get; set; }
+
+    public DateTime CreateDate { get; set; } = DateTime.UtcNow;
+
+    public DateTime UpdateDate { get; set; } = DateTime.UtcNow;
+
+    public DateTime? DeleteDate { get; set; }
+
+    public int? ProductId { get; set; }
+
+    public int? SupplierId { get; set; } // Should not present here, it is already in product table. I am not going to remove it. Just leave it null.
+
+    public DateTime PurchaseDate { get; set; }
+
+    public decimal Quantity { get; set; }
+
+    public string? Description { get; set; }
+
+    public decimal UnitPrice { get; set; }
+
+    public string? PurchaseOrderNumber { get; set; }
+
+    public string? InvoiceNumber { get; set; }
+
+    public DateTime? ReceivedDate { get; set; }
+
+    public Product? Product { get; set; } 
+
+    public Supplier? Supplier { get; set; }  // not needed here
+}
